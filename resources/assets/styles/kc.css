@@ -1,0 +1,224 @@
+.logo-info img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+	width:100%!important;
+}
+.main-footer ul li{
+    list-style: none;
+}
+.main-footer {
+    padding: 80px 0;
+    background: #fff;
+    border-top: 10px solid #337ab7;
+}
+
+.main-footer .inner {
+    display: flex;
+}
+
+.main-footer .logo-info {
+    width: 20%;
+    padding-right: 30px;
+    border-right: 1px solid #ccc;
+}
+
+.main-footer .logo-info .logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-footer .logo-info h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.main-footer .logo-info p {
+    color: #737071;
+    margin-top: 20px;
+}
+
+.main-footer .logo-info .social-links {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.main-footer .logo-info .social-links li {
+    display: inline-block;
+}
+
+.main-footer .logo-info .social-links li a {
+    display: block;
+    text-decoration: none;
+    width: 45px;
+    padding: 7px 0;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 5px solid rgba(0, 0, 0, .15);
+}
+
+.main-footer .footer-nav {
+    padding: 0 30px;
+    width: 55%;
+}
+
+.main-footer .footer-nav > h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-footer .footer-nav .navigations {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.main-footer .footer-nav .navigations .nav {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.main-footer .footer-nav .navigations .nav li a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0a71b9;
+}
+
+.main-footer .footer-nav .navigations .nav.microsite li:first-child a {
+    font-size: 16px;
+}
+
+.main-footer .footer-nav .navigations .nav.microsite.electronics li:first-child a {
+    color: #ee232a;
+}
+
+.main-footer .footer-nav .navigations .nav.microsite.sticklers li:first-child a {
+    color: #f37836;
+}
+
+.main-footer .footer-nav .navigations .nav.microsite.medical li:first-child a {
+    color: #0e72ba;
+}
+
+.main-footer .footer-nav .navigations .nav.microsite.precision li:first-child a {
+    color: #2a9146;
+}
+
+.main-footer .footer-nav .navigations .nav.microsite li a {
+    font-size: 14px;
+    color: #858383;
+}
+
+.main-footer .footer-nav .legal {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px -10px;
+}
+
+.main-footer .footer-nav .legal li a {
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.main-footer .newsletter {
+    width: 25%;
+    padding-left: 30px;
+    border-left: 1px solid #ccc;
+}
+
+.main-footer .newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-footer .newsletter p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.main-footer .newsletter form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    margin: 5px 0;
+}
+
+.main-footer .newsletter form .halfs {
+    display: flex;
+}
+
+.main-footer .newsletter form .halfs input {
+    width: 49%;
+}
+
+.main-footer .newsletter form .halfs input:last-child {
+    margin-left: 5px;
+}
+
+.main-footer .newsletter form button {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 3px;
+    color: #337ab7;
+    background: #fff;
+    box-shadow: none;
+    border: 2px solid;
+    margin-top: 10px;
+}
+
+.main-footer .newsletter form label.error {
+    font-size: 12px;
+    color: red;
+    display: block;
+    margin: 0 0 10px;
+}
+
+@media (max-width:768px) {
+    .main-footer .inner {
+        display: block;
+    }
+    .main-footer .inner > div {
+        padding: 30px 10px;
+        border: 0 none;
+        width: 100%;
+    }
+    .main-footer .footer-nav .navigations {
+        flex-direction: column;
+    }
+    .main-footer .footer-nav .navigations .nav {
+        margin: 20px 0;
+    }
+}
+.resourceblocks h2 {
+	text-align:center;
+	padding-top:100px;
+	padding-bottom: 10px;
+}
+.resourceblocks a {
+	color: red;
+}
+.resourceblocks {
+	padding-bottom: 40px;
+	line-height: .7;
+}
+.centerme h2 {
+	text-align: center;
+  width: 100%;
+
+}
+.featapptext p {
+	padding-bottom: 10px;
+	padding-top:10px;
+	line-height:1.5;
+}

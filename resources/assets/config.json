@@ -19,6 +19,9 @@
     "medical": [
       "./styles/medical.scss"
     ],
+    "kc": [
+      "./styles/kc.css"
+    ],
     "customizer": [
       "./scripts/customizer.js"
     ]

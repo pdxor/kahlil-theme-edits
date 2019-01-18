@@ -30,3 +30,10 @@
 	</nav>
   @stack('after-navbar')
 </div>
+@if(is_singular('distributor'))
+<div class="container-fluid">
+  <div class="row">
+  <p><img class="img-fluid" src="<?php the_field('top_banner'); ?>"></p>
+  </div>
+</div>
+@endif
