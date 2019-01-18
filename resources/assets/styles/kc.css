@@ -200,3 +200,25 @@
         margin: 20px 0;
     }
 }
+.resourceblocks h2 {
+	text-align:center;
+	padding-top:100px;
+	padding-bottom: 10px;
+}
+.resourceblocks a {
+	color: red;
+}
+.resourceblocks {
+	padding-bottom: 40px;
+	line-height: .7;
+}
+.centerme h2 {
+	text-align: center;
+  width: 100%;
+
+}
+.featapptext p {
+	padding-bottom: 10px;
+	padding-top:10px;
+	line-height:1.5;
+}
