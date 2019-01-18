@@ -10,6 +10,9 @@ add_filter('sage/display_sidebar', function() {
   if('template-landing.blade.php' != basename(get_page_template())) {
       $return = true;
   }
+  if('content-single-distributor.blade.php' != basename(get_page_template())) {
+      $return = false;
+  }
   if('application' == get_post_type()) {
       $return = false;
   }
