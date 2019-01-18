@@ -1,0 +1,172 @@
+
+.pcff-questions {
+  @extend .text-center;
+
+  position: relative;
+  min-height: 300px;
+
+  .pcff-questions-item {
+    display: none;
+
+    &.active {
+      display: block;
+      opacity: 1;
+      z-index: 1000;
+    }
+
+    .dropdown-toggle {
+      @extend .btn-lg;
+    }
+  }
+}
+
+.bootstrap-select {
+  width: 350px !important;
+}
+
+.pcff-pager {
+  @extend .list-unstyled;
+
+  font-size: 16px;
+}
+
+.pcff-questions-item {
+  &.active {
+    .btn-pcff-prev {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.btn-pcff-controls {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+
+  .chosen.active & {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .pcff-questions-item:last-child & {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.pcff-questions-item:first-child .btn-pcff-prev {
+  display: none;
+}
+
+.pcff-questions-item:last-child .btn-pcff-next {
+  display: none;
+}
+
+.pcff-form > ul {
+  @extend .list-unstyled;
+}
+
+.pcff-form > ul > li.pcff-questions-item-question {
+  @extend .h3;
+}
+
+.pcff-results {
+  @extend .text-left;
+}
+
+.pcff-text-before {
+  display: block;
+}
+
+.pcff-control {
+  width: auto !important;
+  display: inline-block;
+
+  .select2 {
+    min-width: 400px;
+  }
+
+  margin-top: 25px;
+}
+
+.list-steps {
+  @extend .text-center;
+
+  counter-reset: step;
+}
+
+.list-steps li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.list-steps li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px;
+  background-color: #ddd;
+  color: #aaa8a8;
+  z-index: 20;
+  position: relative;
+}
+
+.list-steps li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, green 50%, #ddd 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  top: 12px;
+  left: -50%;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.list-steps li:first-child::after {
+  content: none;
+}
+
+.list-steps li.active,
+.list-steps li.completed {
+  color: green;
+}
+
+.list-steps li.active::before,
+.list-steps li.completed::before {
+  border-color: #e48a3e;
+  background-color: #e48a3e;
+  color: #fff;
+}
+
+.list-steps li.active + li::after,
+.list-steps li.completed + li::after {
+  background-color: green;
+  background-position: left bottom;
+}
+
+.btn-start-over {
+  @extend .btn-secondary;
+}
+
+.results-list {
+  @extend .list-unstyled;
+}
+
+.results-list-item {
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 25px;
+}

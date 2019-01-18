@@ -1,0 +1,14 @@
+.job_listing-template-default {
+  .application_button {
+    @extend .btn, .btn-primary;
+  }
+}
+
+.job-manager-application-wrapper .application,
+.single_job_listing .application {
+  overflow: visible;
+}
+
+.application_details {
+  @extend .p-3;
+}

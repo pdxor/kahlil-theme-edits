@@ -1,0 +1,62 @@
+// Footer
+.content-info {
+  @extend .text-white, .py-5;
+
+  background-color: $brand-footer;
+  box-shadow: inset 0 3px 5px 0 darken($brand-footer, 20%);
+
+  .widget a {
+    @extend .text-white;
+  }
+
+  .fa-stack.fa-3x {
+    width: 2.5rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.footer-addon {
+  h2 {
+    @extend .my-3;
+  }
+}
+
+.footer-addon-where-to-buy {
+  @extend .text-center, .text-white;
+
+  padding-top: $spacer*6.5;
+  padding-bottom: $spacer*6.5;
+  background-image: url('../images/background-footer-where-to-buy.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.footer-addon-product-finder {
+  @extend .text-center;
+
+  padding-top: $spacer*6.5;
+  padding-bottom: $spacer*6.5;
+  background: linear-gradient(to bottom, rgba(252, 253, 254, 1) 0%, rgba(225, 225, 226, 1) 100%);
+}
+
+.colophon {
+  @extend .text-white;
+
+  font-size: $font-size-sm;
+  background: lighten($brand-footer, 10%);
+
+  a {
+    @extend .text-white;
+  }
+
+  #menu-footer-menu {
+    li {
+      @extend .nav-item;
+
+      a {
+        @extend .nav-link;
+      }
+    }
+  }
+}

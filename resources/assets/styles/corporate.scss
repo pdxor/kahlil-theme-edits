@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/functions";
+@import "common/corporate";
+@import "common/variables";
+@import "common/all";
+@import "~bootstrap/scss/variables";
+
+/** Import everything from autoload */
+@import "./autoload/**/*";
+
+// Import sub-theme specific styles
+@import "~animate.css/animate.css";
+
+// Import common styles
+@import "all";
+@import "components/wp-job-manager";

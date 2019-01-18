@@ -1,0 +1,9 @@
+.cat-post-widget {
+  ul {
+    @extend .pl-0;
+  }
+
+  .cat-post-footer-link {
+    @extend .btn, .btn-primary;
+  }
+}

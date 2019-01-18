@@ -1,0 +1,12 @@
+// Breadcrumbs
+.breadcrumb {
+  @extend .mt-3, .mb-3, .pl-0;
+
+  li {
+    @extend .breadcrumb-item;
+
+    &:last-child {
+      @extend .active;
+    }
+  }
+}

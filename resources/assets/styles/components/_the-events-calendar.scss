@@ -1,0 +1,9 @@
+// The Events Calendar
+
+.tribe-list-widget {
+  @extend .list-unstyled;
+
+  li {
+    @extend .mx-0, .px-0;
+  }
+}

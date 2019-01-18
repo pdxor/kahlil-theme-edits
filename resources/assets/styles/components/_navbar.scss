@@ -1,0 +1,93 @@
+// Navbar
+
+.navbar-wrapper {
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  border-top: 3px solid theme-color('primary');
+  box-shadow: 0 3px 5px 0 rgba(theme-color('dark'), 0.42);
+}
+
+.navbar {
+  .nav-link {
+    @extend .py-2, .px-xl-3, .px-2;
+
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid darken(theme-color('navbar'), 20%);
+    }
+
+    padding-top: $spacer*0.75 !important;
+    padding-bottom: $spacer*0.75 !important;
+  }
+
+  .current-menu-item .nav-link,
+  .current-page-ancestor .nav-link,
+  .current_page_parent .nav-link {
+    background-color: darken(theme-color('navbar'), 2%);
+    border-top-color: darken(theme-color('navbar'), 2%);
+    border-bottom-color: darken(theme-color('navbar'), 2%);
+  }
+
+  .nav-item:last-child .nav-link {
+    border-right: 0;
+  }
+}
+
+.navbar {
+  @extend .navbar-dark;
+
+  // Special case for Corporate copy of this theme
+  .microcare-corporate & {
+    @extend .navbar-light;
+  }
+
+  background-color: theme-color('navbar');
+  -webkit-font-smoothing: subpixel-antialiased;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+
+  > .container {
+    @include media-breakpoint-down(sm) {
+      min-width: 100%;
+    }
+  }
+
+  .btn-sm {
+    @extend .py-2;
+  }
+
+  .navbar-brand {
+    @extend .p-0, .m-0;
+
+    img {
+      @extend .bg-primary, .p-1;
+
+      max-width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+.dropdown-menu {
+  .single-language {
+    @extend .dropdown-item;
+  }
+}
+
+.navbar-collapse {
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+
+.sds-tray-wrapper,
+.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    background: theme-color('navbar');
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+  }
+}

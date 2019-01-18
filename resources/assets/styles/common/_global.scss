@@ -1,0 +1,77 @@
+// Base styles
+body {
+  position: relative;
+}
+
+.main,
+.sidebar-inner {
+  @extend .pb-5;
+}
+
+.main {
+  .template-landing & {
+    @extend .px-0;
+  }
+}
+
+.sidebar-inner {
+  @extend .pt-5;
+}
+
+h1 {
+  @extend .mt-3;
+
+  small {
+    font-size: 60%;
+    color: $gray-light;
+  }
+}
+
+.dropdown-menu {
+  z-index: 1010 !important;
+}
+
+.page-header {
+  @extend .mb-5;
+
+  border-bottom: 1px solid $gray-lighter;
+}
+
+article {
+  section {
+    @extend .mb-5, .mt-3;
+  }
+}
+
+.list-group-content-links,
+.content-links {
+  a {
+    color: $body-color !important;
+    text-decoration: none;
+  }
+
+  .card:hover {
+    background: theme-color('light');
+  }
+
+  h3,
+  h5 {
+    color: theme-color('primary') !important;
+  }
+
+  a.list-group-item {
+    @extend .list-group-item-action, .py-4;
+  }
+}
+
+.show-stuck {
+  transition: $transition-base;
+  opacity: 0;
+  visibility: hidden;
+
+  .js-is-sticky &,
+  .js-is-stuck & {
+    opacity: 1;
+    visibility: visible;
+  }
+}

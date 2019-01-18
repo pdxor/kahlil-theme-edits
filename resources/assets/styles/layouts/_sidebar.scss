@@ -1,0 +1,31 @@
+// Sidebar
+.sidebar {
+  @extend .d-flex;
+}
+
+.sidebar-inner {
+  @extend .align-self-stretch, .w-100;
+
+  background-color: $gray-lightest;
+
+  .widget {
+    @extend .mb-5, .p-3;
+
+    background-color: $gray-lighter;
+
+    h3 {
+      @extend .h5;
+    }
+  }
+
+  .btn {
+    white-space: normal !important;
+  }
+}
+
+.widget_search {
+  .form-group,
+  .search-form .input-group {
+    width: 100%;
+  }
+}

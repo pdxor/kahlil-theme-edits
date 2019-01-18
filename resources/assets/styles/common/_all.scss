@@ -1,0 +1,10 @@
+$microcare-colors: (
+  corporate: #337ab7,
+  electronics: #ed1c24,
+  sticklers: #f26522,
+  medical: #0f76bb,
+  precisioncleaners: #28903a,
+  npbreplacements: #28903a,
+);
+
+$theme-colors: map-merge($microcare-colors, $theme-colors);

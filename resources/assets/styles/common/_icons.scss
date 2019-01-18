@@ -1,0 +1,33 @@
+.flag-icon {
+  @extend .d-flex, .align-items-center;
+}
+
+.flag-icon::before {
+  content: '';
+  margin-right: $spacer*0.5;
+  height: $spacer*1.5;
+  width: $spacer*1.5;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: $spacer*1.5;
+}
+
+.flag-icon.flag-fr::before {
+  background-image: url(../images/flags/france.svg);
+}
+
+.flag-icon.flag-en::before {
+  background-image: url(../images/flags/usa.svg);
+}
+
+.flag-icon.flag-es::before {
+  background-image: url(../images/flags/mexico.svg);
+}
+
+.flag-icon.flag-zh-hant::before {
+  background-image: url(../images/flags/china-2.svg);
+}
+
+.flag-icon.flag-de::before {
+  background-image: url(../images/flags/germany.svg);
+}

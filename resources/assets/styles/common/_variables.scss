@@ -1,0 +1,28 @@
+// Colors
+$brand-navbar:					theme-color('navbar');
+$brand-inverse:					theme-color('navbar');
+$brand-footer:          #7e7a6c;
+$brand-corporate:       #337ab7;
+$brand-corporate-background: #1a9ef2;
+$gray-light: #adb5bd;
+$gray-lighter: #dee2e6;
+$gray-lightest: #f8f9fa;
+
+$state-danger-text: theme-colors('danger');
+
+// Fonts
+$fa-font-path:          '~font-awesome/fonts';
+$font-family-sans-serif: 'PT Sans', sans-serif;
+
+// Navbar
+$navbar-dark-color: #fff;
+$navbar-padding-y: 0;
+
+// List Groups
+$list-group-action-color: theme-color('primary');
+$list-group-link-color: theme-color('primary');
+
+// Breadcrumbs
+$breadcrumb-bg: transparent;
+
+// Cards

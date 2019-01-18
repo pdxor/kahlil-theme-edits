@@ -1,0 +1,46 @@
+.related-resources svg {
+  height: 20px;
+  width: 20px;
+}
+
+.related-resources .icon {
+  line-height: 0;
+}
+
+.resource .read-more {
+  display: block;
+}
+
+.resource-icon {
+  margin-top: 20px;
+}
+
+.resource-icon svg {
+  width: 45px;
+  height: 45px;
+}
+
+.resources-meta {
+  margin-top: 25px;
+}
+
+.related-product img {
+  @extend .img-fluid;
+}
+
+.related-resources {
+  @extend .pt-3;
+
+  border-top: 1px solid $gray-lighter;
+
+  h2 {
+    @include media-breakpoint-down(sm) {
+      position: -webkit-sticky !important;
+      position: sticky !important;
+      top: $spacer*3.15;
+      background-color: $white;
+      z-index: 10;
+    }
+  }
+}
+

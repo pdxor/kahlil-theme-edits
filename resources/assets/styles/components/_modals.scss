@@ -1,0 +1,13 @@
+#loader {
+  @extend .my-5, .text-center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.modal-footer {
+  z-index: 1000;
+}

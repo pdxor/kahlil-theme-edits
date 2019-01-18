@@ -1,0 +1,56 @@
+.fl-builder {
+  .main {
+    @extend .pb-0;
+  }
+}
+
+.fl-row-fixed-width {
+  @extend .container;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fl-row-content-wrap {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fl-module-content {
+  margin-left: $grid-gutter-width/2 !important;
+  margin-right: $grid-gutter-width/2 !important;
+}
+
+.callout-product {
+  .fl-callout-text {
+    ul {
+      @extend .mt-3, .pl-3;
+
+      font-size: $font-size-sm;
+    }
+  }
+
+  .fl-callout-photo-above-title .fl-photo {
+    @extend .mb-0;
+  }
+}
+
+.fl-module-bscallout {
+  .card {
+    border: 0;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+}
+
+.fl-module-bscallout.callout-product .fl-callout-content {
+  .card {
+    border: $card-border-width solid $card-border-color !important;
+  }
+
+  .card-body {
+    padding: $card-spacer-x !important;
+  }
+}

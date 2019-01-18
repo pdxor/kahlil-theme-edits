@@ -1,0 +1,46 @@
+.product {
+  .archive &,
+  .search-results & {
+    @extend .mb-5;
+  }
+
+  .single & {
+    .product-nav {
+      top: $spacer*3.5;
+      position: sticky;
+    }
+  }
+}
+
+.formulated-for {
+  border-bottom: 1px solid $gray-lighter;
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+}
+
+.product-tabs {
+  font-size: $font-size-sm;
+
+  .table th {
+    border-top: none;
+  }
+
+  .nav-tabs {
+    .nav-link {
+      @extend .py-0;
+    }
+  }
+
+  table {
+    font-size: $spacer*0.75;
+  }
+}
+
+.product-nav {
+  @extend .d-none, .d-md-block;
+
+  .nav-item .nav-link.active {
+    background-color: $gray-lighter;
+    color: theme-color-level('primary', 6);
+  }
+}

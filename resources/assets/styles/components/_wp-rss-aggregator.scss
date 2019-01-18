@@ -1,0 +1,38 @@
+// WP RSS Aggregator
+
+.rss-aggregator {
+  @extend .list-unstyled;
+
+  > .feed-item {
+    > a {
+      @extend .h4;
+    }
+
+    .thumbnail-excerpt {
+      @include make-row();
+    }
+
+    img,
+    .wprss-feed-excerpt {
+      @include make-col-ready();
+    }
+
+    img {
+      @extend .img-fluid;
+
+      @include media-breakpoint-up(md) {
+        @include make-col(4);
+      }
+    }
+
+    .wprss-feed-excerpt {
+      @include media-breakpoint-up(md) {
+        @include make-col(8);
+      }
+    }
+  }
+}
+
+.wprss-feed-excerpt {
+  font-size: $font-size-sm;
+}

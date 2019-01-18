@@ -1,0 +1,76 @@
+// Header
+
+.nav-network {
+  font-size: $font-size-sm;
+  transition: all 0.15s linear;
+
+  .nav-icon {
+    padding: 2px;
+    height: $spacer;
+    width: $spacer;
+    transition: all 0.15s linear;
+  }
+
+  .nav-link,
+  .btn-light {
+    transition: all 0.15s linear;
+  }
+
+  &:not(:hover) {
+    .nav-link {
+      color: $gray-600 !important;
+    }
+
+    .btn-light {
+      color: $gray-600 !important;
+    }
+
+    .nav-icon {
+      background: $gray-600 !important;
+    }
+  }
+}
+
+.brand {
+  @extend .py-2, .d-inline-block;
+
+  img {
+    max-width: 150px;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 170px;
+    }
+  }
+}
+
+.banner > .container {
+  @include media-breakpoint-down(sm) {
+    min-width: 100%;
+  }
+}
+
+.banner .fa {
+  color: $gray-light;
+}
+
+#menu-corporate {
+  .navbar-collapse & {
+    @extend .navbar-nav;
+  }
+
+  li {
+    @extend .nav-item;
+
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid $gray-lighter;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    a {
+      @extend .nav-link;
+    }
+  }
+}
